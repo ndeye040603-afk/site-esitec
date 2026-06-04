@@ -1,0 +1,115 @@
+/* =============================================
+   ESITEC — Feuille de style principale
+   Q2 : modifier background-color du header
+        #1a237e  →  #006064
+   ============================================= */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* ── Navigation ── */
+header {
+  background-color: #1a237e;  /* Q2 : changer cette valeur */
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+nav ul { list-style: none; display: flex; gap: 32px; }
+nav ul li a { color: #cfd8dc; text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+nav ul li a:hover, nav ul li a.active { color: #ffffff; font-weight: 600; }
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #1a237e 0%, #283593 60%, #3949ab 100%);
+  color: white;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.hero h1 { font-size: 2.8rem; margin-bottom: 12px; }
+.hero .subtitle { font-size: 1.2rem; color: #c5cae9; margin-bottom: 20px; }
+.hero .description { max-width: 600px; margin: 0 auto 36px; font-size: 1rem; color: #e8eaf6; }
+
+.btn {
+  display: inline-block;
+  background-color: #ff6f00;
+  color: white;
+  padding: 14px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+.btn:hover { background-color: #e65100; }
+
+/* ── Cards ── */
+.features {
+  display: flex;
+  gap: 24px;
+  padding: 60px 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #ffffff;
+}
+
+.card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 32px 28px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-4px); }
+.card .icon { font-size: 2.4rem; display: block; margin-bottom: 16px; }
+.card h3 { font-size: 1.1rem; color: #1a237e; margin-bottom: 10px; }
+.card p { font-size: 0.9rem; color: #555; }
+
+/* ── Pages internes ── */
+.page-hero { background-color: #1a237e; color: white; text-align: center; padding: 60px 40px; }
+.page-hero h1 { font-size: 2.2rem; }
+.page-hero p { color: #c5cae9; margin-top: 10px; }
+
+.content { max-width: 800px; margin: 50px auto; padding: 0 40px; }
+.content h2 { color: #1a237e; font-size: 1.5rem; margin: 32px 0 12px; border-left: 4px solid #ff6f00; padding-left: 12px; }
+.content p { font-size: 1rem; color: #444; margin-bottom: 16px; }
+
+/* ── Formulaire ── */
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 6px; color: #333; }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 12px 16px;
+  border: 1.5px solid #ccc; border-radius: 6px;
+  font-size: 1rem; font-family: inherit;
+  transition: border-color 0.2s;
+}
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: #1a237e; }
+.form-group textarea { height: 130px; resize: vertical; }
+
+/* ── Footer ── */
+footer { background-color: #1a237e; color: #c5cae9; text-align: center; padding: 24px; font-size: 0.9rem; }
