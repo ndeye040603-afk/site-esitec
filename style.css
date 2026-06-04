@@ -15,7 +15,7 @@ body {
 
 /* ── Navigation ── */
 header {
-  background-color: #1a237e;  /* Q2 : changer cette valeur */
+  background-color: #006064;  /* Q2 : changer cette valeur */
   padding: 0 40px;
   position: sticky;
   top: 0;
